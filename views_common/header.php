@@ -10,19 +10,20 @@
 	</head>
 	<body>
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		  <a class="navbar-brand" href="#">SWAPI</a>
+		  <a class="navbar-brand" href="index.php">SWAPI</a>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
 		  </button>
 		  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 		    <div class="navbar-nav">
-		      <a class="nav-item nav-link" href="idex.php">Home <span class="sr-only">(current)</span></a>
+		      <a class="nav-item nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
 		      <a class="nav-item nav-link" href="root.php">Root</a>
-		      <a class="nav-item nav-link" href="#"> People </a>
-		      <a class="nav-item nav-link" href="#"> Films </a>
-		      <a class="nav-item nav-link" href="#">Starships </a>
-		      <a class="nav-item nav-link" href="#">Vehicles</a>
-		       <a class="nav-item nav-link" href="#">Planets</a>		      
+		      <a class="nav-item nav-link" href="people.php?p=1"> People </a>
+		      <a class="nav-item nav-link" href="films.php?p=1"> Films </a>
+		      <a class="nav-item nav-link" href="starships.php?p=1">Starships </a>
+		      <a class="nav-item nav-link" href="vehicles.php?p=1">Vehicles</a>
+		      <a class="nav-item nav-link" href="species.php?p=1">Species</a>
+		      <a class="nav-item nav-link" href="planets.php?p=1">Planets</a>		      
 		    </div>
 		  </div>
 		</nav>

@@ -12,6 +12,7 @@ class Curl implements ICurl
 		$this->curlresource = $this->curl_init();
 		$this->url = $url;
 	}
+	
 	public function curl_init() 
 	{
 		return  $ch = curl_init(); 
