@@ -12,7 +12,7 @@
 							$total = ($_GET['p'] > 1) ? $_GET['p'] + 5 : 5;
 							for ($i = $_GET['p']; $i <= $total ; $i++)
 							{
-								foreach (getStarWarsSpeciesInfo($i) as $StWKey => $StWValue)
+								foreach (getStarWarsResource(StarWarsSpeciesInfo, $i) as $StWKey => $StWValue)
 								{
 									if (!is_array($StWValue))
 										echo $StWKey. ": ". $StWValue. "<br />";

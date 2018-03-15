@@ -9,10 +9,12 @@
 						<div class="card-body">
 						<h4 class="card-title">SWAPI The Star Wars API People ::</h4>
 						<?php
-							$total = ($_GET['p'] > 1) ? $_GET['p'] + 5 : 5;	
+							$total = ($_GET['p'] > 1) ? $_GET['p'] + 5 : 5;								
 							for ($i = $_GET['p']; $i <= $total ; $i++)
-							{
-								foreach (getStarWarsPeopleInfo($i) as $StWKey => $StWValue)
+							{	
+								echo "<img src=\"img\/people\/avatar-stormtrooper_200.jpg\" / width=\"128px\">";
+								echo "<br />";
+								foreach (getStarWarsResource(StarWarsPeople, $i) as $StWKey => $StWValue)
 								{
 									if (!is_array($StWValue))
 										echo $StWKey. ": ". $StWValue. "<br />";

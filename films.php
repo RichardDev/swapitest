@@ -10,8 +10,9 @@
 						<h4 class="card-title">SWAPI The Star Wars API Films ::</h4>
 						<?php
 							$total = ($_GET['p'] > 1) ? $_GET['p'] + 5 : 5;
-							for ($i = $_GET['p']; $i <= $total ; $i++) {
-								foreach (getStarWarsFilmInfo($i) as $StWKey => $StWValue)
+							for ($i = $_GET['p']; $i <= $total ; $i++) 
+							{
+								foreach (getStarWarsResource(StarWarsFilmInfo,$i) as $StWKey => $StWValue)
 								{
 									if (!is_array($StWValue))
 										echo $StWKey. ": ". $StWValue. "<br />";
